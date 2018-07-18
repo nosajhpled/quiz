@@ -20,6 +20,7 @@ $answers = array(
     <script src=""></script>
     <link rel="stylesheet" type="text/css" href="">
     <style>
+    body{font-size: 20px;}
     div {
       width:75%;
       margin: auto;
@@ -35,11 +36,22 @@ $answers = array(
 <div id="answer">
 <ul>
   <?php foreach($answers as $answer) { ?>
-  <li><input type="checkbox" id="answer<?php echo $answer['seq'];?> name="answer<?php echo $answer['seq'];?>" /><?php echo $answer['text'];?></li>
+  <li><input type="checkbox" id="answer<?php echo $answer['seq'];?>" name="answer<?php echo $answer['seq'];?>" /><?php echo $answer['text'];?></li>
 <?php } // answers ?>
 
 </ul>
 </div>
+<div>
+  <input type="button" value="Flag (flags question - stay on page)"  /> <br />
+  <input type="button" value="Prev"  /> <input type="button" value="Next"  /> <input type="button" value="Navigate"  />
+  <br />
+  2:30:00
+  Count down timer ()
+<br />
+  Part 1 - general physics - 75 - 3 hours <br />
+  Part 2 - clinical - 50 - 1 hour <br />
+</div>
+
 
 </body>
 </html>
